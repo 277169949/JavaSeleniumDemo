@@ -1,0 +1,11 @@
+Actions action = new Actions(driver);
+WebElement element=driver.findElement(By.linkText("TEST"));
+
+//Double click
+action.doubleClick(element).perform();
+
+//Mouse over
+action.moveToElement(element).perform();
+
+//Right Click
+action.contextClick(element).perform();
